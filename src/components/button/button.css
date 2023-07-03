@@ -1,0 +1,27 @@
+.button {  
+    display: inline-block;  
+    padding: .5rem .75rem;
+    
+    border: none;
+    border-radius: 7.5px;
+    outline: none;
+    
+    background-color: #4695ee;
+    transition: all .2s linear;
+}
+
+.button:hover {
+    color: #ccc;
+    background-color: #5091db;
+}
+
+.button.outline {
+    color: #fff;
+    
+    border: 1px solid #4695ee;
+    background-color: transparent;
+}
+
+.button.outline:hover {
+    background-color: #5091db;
+}
