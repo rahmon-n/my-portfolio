@@ -1,6 +1,5 @@
 .about_image {
     width: 100%;
-    text-align: center;
     border-radius: 10%;
     transform: rotate(10deg);
     transition: transform .2s linear;
@@ -14,7 +13,7 @@
     display: flex;
     position: relative;
     margin: 2.2rem auto 0;
-    width: 80%;
+    width: 70%;
 }
 
 .about_image-container::after {
@@ -27,13 +26,12 @@
     z-index: -1;
     
     border-radius: 10%;
-    background-color: #295a91;
+    background: linear-gradient(130deg, #021225, #64a0e4a4);
 }
 
 .about_elements {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.3rem 4%;
 
     margin-top: 3.2rem;
@@ -41,13 +39,17 @@
 
 .about_element {
     padding: 1rem;
-    width: 48%;
 
-    flex: 1 0 auto;
     text-align: center;
     
     border-radius: 10px;
     background-color: #2f387b;
+    border: 1px solid transparent;
+}
+
+.about_element:hover {
+    background: transparent;
+    border: 1px solid #4695ee;
 }
 
 .about_element_icon svg {
@@ -76,4 +78,32 @@
 .about_button {
     text-align: center;
     margin-top: 20px;
+}
+
+
+/* ==== Media queries for medium diveces ==== */
+
+@media screen and (min-width: 600px) {
+    .about_image-container {
+        width: 35%;
+    }
+    
+    .about_elements {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==== Media queries for large diveces ==== */
+
+@media screen and (min-width: 1024px) {
+    .about__container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 1rem;
+    }
+
+    .about_image-container {
+        width: 75%;
+        height: fit-content;
+    }
 }

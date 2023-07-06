@@ -1,18 +1,25 @@
 .button {  
     display: inline-block;  
     padding: .5rem .75rem;
-    
-    border: none;
-    border-radius: 7.5px;
+    color: #000;
     outline: none;
-    
+    border-radius: 7.5px;
+    border: 1px solid transparent;
     background-color: #4695ee;
+    
     transition: all .2s linear;
+    cursor: pointer;
 }
 
 .button:hover {
     color: #ccc;
-    background-color: #5091db;
+    background-color: #4695ee73;
+}
+
+.button:disabled {
+    color: #eee;
+    cursor: not-allowed;
+    background-color: #ccc;
 }
 
 .button.outline {
@@ -23,5 +30,5 @@
 }
 
 .button.outline:hover {
-    background-color: #5091db;
+    background-color: #4695ee73;
 }

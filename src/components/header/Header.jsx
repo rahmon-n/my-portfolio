@@ -1,5 +1,5 @@
 import Button from '../button/Button';
-import CV from '../../assets/CV-en.pdf';
+import CV from '../../assets/CV-Najimov-Rahmon.pdf';
 import Avatar from '../../assets/avatar.png';
 
 import './header.css';

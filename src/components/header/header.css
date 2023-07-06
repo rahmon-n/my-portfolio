@@ -1,5 +1,5 @@
 .header {
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 .header h1, .header h5 {
@@ -20,7 +20,23 @@
 }
 
 .avatar {
-    margin-top: 20px;
-    width: 100%;
-    object-fit: cover;
+    display: block;
+    margin: 20px auto 0;
+    width: 90%;
+}
+
+/* ==== Media queries for medium diveces ==== */
+
+@media screen and (min-width: 600px) {
+    .avatar {
+        width: 60%;
+    }
+}
+
+/* ==== Media queries for large diveces ==== */
+
+@media screen and (min-width: 1024px) {
+    .avatar {
+        width: 45%;
+    }
 }

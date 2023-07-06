@@ -1,9 +1,11 @@
 import { LiaMedalSolid } from 'react-icons/lia';
 import { FaGraduationCap, FaReact } from 'react-icons/fa';
 import { MdLanguage } from 'react-icons/md';
-import { AiOutlineHtml5 } from 'react-icons/ai';
+import { AiOutlineHtml5, AiOutlineHome, AiOutlineMessage } from 'react-icons/ai';
 import { DiCss3 } from 'react-icons/di';
-import { RiJavascriptFill } from 'react-icons/ri';
+import { RiJavascriptFill, RiGalleryLine } from 'react-icons/ri';
+import { PiNotebookDuotone } from 'react-icons/pi';
+import { CgMail } from 'react-icons/cg';
 import {
   SiStyledcomponents,
   SiNextdotjs,
@@ -12,7 +14,7 @@ import {
   SiUbuntu
 } from 'react-icons/si';
 import { BiLogoTypescript, BiLogoFirebase } from 'react-icons/bi';
-import { BsGit } from 'react-icons/bs';
+import { BsGit, BsTelegram, BsPerson } from 'react-icons/bs';
 
 export const ABOUT_ELEMENTS = [
   { name: 'Experience', descr: '1+ year working', icon: <LiaMedalSolid /> },
@@ -47,4 +49,28 @@ export const EXPERIENCE_ELEMENTS = [
       { name: 'Git', exp: 'Intermediate', icon: <BsGit /> }
     ]
   }
+];
+
+export const CONTACT_ELEMENTS = [
+  {
+    option: 'Email',
+    data: 'rahmon.dev@gmail.com',
+    link: 'mailto:rahmon.dev@gmail.com',
+    icon: <CgMail />
+  },
+  {
+    option: 'Telegram',
+    data: '@rahmon__n',
+    link: 'https://t.me/rahmon_n',
+    icon: <BsTelegram />,
+    target: '_blank'
+  }
+];
+
+export const NAV_ELEMENTS = [
+  { icon: <AiOutlineHome />, navLink: '#', title: 'Home' },
+  { icon: <BsPerson />, navLink: '#about', title: 'About me' },
+  { icon: <PiNotebookDuotone />, navLink: '#experience', title: 'Experience' },
+  { icon: <RiGalleryLine />, navLink: '#portfolio', title: 'Portfolio Gallery' },
+  { icon: <AiOutlineMessage />, navLink: '#contact', title: 'Contact me' }
 ];

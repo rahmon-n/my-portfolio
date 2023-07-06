@@ -1,8 +1,12 @@
+.experience__container {
+    margin-top: 30px;
+}
+
 .experience_card {
     margin-top: 20px;
     padding: 2rem 1.5rem 2.5rem;
     background-color: #2f387b;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .experience_card h4 {
@@ -14,9 +18,6 @@
     text-align: center;
 }
 
-.experience_card_container {
-    margin-top: 30px;
-}
 
 .experience_card_body {
     margin-top: 50px;
@@ -48,4 +49,25 @@
 .experience_card_item p {
     margin-top: 10px;
     color: #ccc;
+}
+
+/* ==== Media queries for medium diveces ==== */
+@media screen and (min-width: 600px) {
+    .experience__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* ==== Media queries for large diveces ==== */
+@media screen and (min-width: 1024px) {
+    .experience__container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .experience_card {
+        padding: 2rem 2.5rem 2.5rem;
+    }
 }
