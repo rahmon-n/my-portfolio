@@ -65,7 +65,7 @@ export const CONTACT_ELEMENTS = [
   },
   {
     option: 'Telegram',
-    data: '@rahmon__n',
+    data: '@rahmon_n',
     link: 'https://t.me/rahmon_n',
     icon: <BsTelegram />,
     target: '_blank'
