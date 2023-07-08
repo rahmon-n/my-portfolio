@@ -16,6 +16,11 @@ import {
 import { BiLogoTypescript, BiLogoFirebase } from 'react-icons/bi';
 import { BsGit, BsTelegram, BsPerson } from 'react-icons/bs';
 
+// image URLS
+import project1 from '../assets/online-shop.jpg';
+import project2 from '../assets/githubsearch.png';
+import project3 from '../assets/youtube-clone.png';
+
 export const ABOUT_ELEMENTS = [
   { name: 'Experience', descr: '1+ year working', icon: <LiaMedalSolid /> },
   { name: 'Education', descr: 'SB TUIT Bachelor', icon: <FaGraduationCap /> },
@@ -73,4 +78,28 @@ export const NAV_ELEMENTS = [
   { icon: <PiNotebookDuotone />, navLink: '#experience', title: 'Experience' },
   { icon: <RiGalleryLine />, navLink: '#portfolio', title: 'Portfolio Gallery' },
   { icon: <AiOutlineMessage />, navLink: '#contact', title: 'Contact me' }
+];
+
+export const PROJECTS_DATA = [
+  {
+    imageUrl: project1,
+    ghLink: 'https://github.com/rahmon-n/aligarh-shop',
+    liveLink: 'https://aligarh-shop.netlify.app/',
+    title: 'Aligarh Online shop',
+    descr: 'Online shop with Auth & Payment method'
+  },
+  {
+    imageUrl: project2,
+    ghLink: 'https://github.com/rahmon-n/GitHub-search-application',
+    liveLink: 'https://reactgihubsearch.netlify.app/',
+    title: 'Github Search Application',
+    descr: 'Lite web application. Used React, react context also GitHub API'
+  },
+  {
+    imageUrl: project3,
+    ghLink: 'https://github.com/rahmon-n/youtube-clone',
+    liveLink: 'https://muiyoutubeclone.netlify.app/',
+    title: 'YouTube Clone',
+    descr: 'implemented with React, MUI and RapidAPI for getting YouTube datas'
+  }
 ];

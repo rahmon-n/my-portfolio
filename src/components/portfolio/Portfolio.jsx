@@ -1,4 +1,5 @@
 import PortfolioCard from './PortfolioCard';
+import { PROJECTS_DATA } from '../../utils/consts';
 import './portfolio.css';
 
 const Portfolio = () => {
@@ -7,8 +8,9 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className='container portfolio__container'>
-        <PortfolioCard />
-        <PortfolioCard />
+        {PROJECTS_DATA.map((data) => (
+          <PortfolioCard {...data} key={data.ghLink} />
+        ))}
       </div>
     </section>
   );
